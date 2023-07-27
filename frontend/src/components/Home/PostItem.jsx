@@ -33,7 +33,7 @@ const PostItem = ({ _id, caption, likes, comments, image, postedBy, savedBy, cre
     const handleLike = async () => {
         setLiked(!liked);
         await dispatch(likePost(_id));
-        const { data } = await axios.get(`/api/v1/post/detail/${_id}`)
+        const { data } = await axios.get(`api/v1/post/detail/${_id}`)
         setAllLikes(data.post.likes)
     }
 
@@ -41,14 +41,14 @@ const PostItem = ({ _id, caption, likes, comments, image, postedBy, savedBy, cre
         e.preventDefault();
         await dispatch(addComment(_id, comment));
         setComment("");
-        const { data } = await axios.get(`/api/v1/post/detail/${_id}`)
+        const { data } = await axios.get(`api/v1/post/detail/${_id}`)
         setAllComments(data.post.comments)
     }
 
     const handleSave = async () => {
         setSaved(!saved);
         await dispatch(savePost(_id));
-        const { data } = await axios.get(`/api/v1/post/detail/${_id}`)
+        const { data } = await axios.get(`api/v1/post/detail/${_id}`)
         setAllSavedBy(data.post.savedBy)
     }
 

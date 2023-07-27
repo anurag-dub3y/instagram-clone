@@ -1,7 +1,7 @@
-export const BASE_PROFILE_IMAGE_URL='http://localhost:3001/public/uploads/profiles/';
-export const BASE_POST_IMAGE_URL='http://localhost:3001/public/uploads/posts/';
+export const BASE_PROFILE_IMAGE_URL='http://localhost:3000/public/uploads/profiles/';
+export const BASE_POST_IMAGE_URL='http://localhost:3000/public/uploads/posts/';
 
-export const SOCKET_ENDPOINT = "http://localhost:3001";
+export const SOCKET_ENDPOINT = "http://localhost:3000/";
 
 
 export const stories = [

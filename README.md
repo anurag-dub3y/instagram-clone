@@ -1,4 +1,4 @@
-# INSTAGRAM CLONE
+# PICTURE PIPER: INSTAGRAM CLONE
 
 ## 🖥️ Tech Stack
 
